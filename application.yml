@@ -5,15 +5,15 @@ spring:
   application:
     name: service-discovery
 server:
-  port: '8761'
+  port: 8761
   
 microservice:
   product-service:
     endpoints:
       endpoint:
-        uri:http://product-service/products/1
+        uri: http://product-service/products/1
   user-service:
     endpoints:
       endpoint:
-        uri:http://user-service/users
+        uri: http://user-service/users
 
