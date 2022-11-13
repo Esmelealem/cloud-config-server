@@ -3,7 +3,7 @@ microservice:
   product-service:
     endpoints:
       endpoint:
-        uri: http://product-service/products/1
+        uri: http://product-service/products
   user-service:
     endpoints:
       endpoint:
