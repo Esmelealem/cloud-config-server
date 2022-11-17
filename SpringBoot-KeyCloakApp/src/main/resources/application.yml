@@ -1,0 +1,26 @@
+#server:
+#  port: 9000
+#keycloak:
+#  realm: emTech
+#  auth-server-url: http://localhost:8080/auth
+#  resource: springsecurityI
+#  public-client: true
+#  bearer-only: true
+##spring.datasource.url=jdbc:postgresql://localhost:5432/product-service
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/product-service
+#    username: postgres
+#    password: 123
+#  jpa:
+#    properties:
+#      hibernate:
+#        disalect: org.hibernate.dialect.PostgreSQLDialect
+#        ddl-auto: create
+#        format_sql: false
+#        show_sql: true
+#        defer-datasource-initialization: true
+#
+#  sql:
+#    init:
+#     mode: always

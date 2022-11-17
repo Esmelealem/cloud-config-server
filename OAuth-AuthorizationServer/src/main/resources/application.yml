@@ -1,0 +1,19 @@
+server:
+  port: 8000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:3333/user_registration
+    username: postgres
+    password: 123
+  jpa:
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: create
+      format_sql: false
+      show_sql: true
+  defer-datasource-initialization: true
+  sql:
+   init:
+    mode: always

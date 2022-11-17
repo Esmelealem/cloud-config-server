@@ -9,6 +9,13 @@
         <module>UserService</module>
         <module>ServiceDiscovery</module>
         <module>ConfigServer</module>
+        <module>APIGateway</module>
+        <module>VaultConfiguration</module>
+        <module>OAuth-AuthorizationServer</module>
+        <module>publisher</module>
+        <module>FirstConsumer</module>
+        <module>SecondConsumer</module>
+        <module>SpringBoot-KeyCloakApp</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

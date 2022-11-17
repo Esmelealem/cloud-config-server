@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: GATEWAY-SERVICE
+
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: ${USER_SERVICE_URL:http://localhost:9091}
+          predicates:
+            - Path=/users/**
+#          filters:
+#            - AddRequestHeader=X-Tenant,acme
+#            - AddResponseHeader=X=Genre,fantasy
+
+
+  main:
+    web-application-type: reactive
+server:
+  port: 8989
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
